@@ -23,7 +23,7 @@
         }
         .formula {
             color: black;
-            font-weight: bold;
+            font-weight: bold;я
             text-align: center;
             font-family: 'Courier New', Courier, monospace;
             border: 1px solid;
@@ -42,6 +42,22 @@
             margin-left: 2cm;
             text-indent: 0;
         }
+        .shadow {
+            text-shadow: 10px 5px 1px blue;
+        } 
+
+        
+        .test:hover {
+            color: brown;
+            text-shadow: 10px 13px 7px gray;
+            transition-delay: 300ms;
+            transition-duration: 1s;
+            
+            
+        }
+
+        
+        
     </style>
 </head>
 <body>
@@ -50,7 +66,7 @@
     </header>
     
     <main>
-       <h1>Расчет (формула)</h1> 
+       <h1 class="test">Расчет (формула)</h1> 
 
         <div>Расчет сводится к определению разницы между активами и пассивами
         (обязательствами), которые определяются следующим образом.</div>
@@ -88,6 +104,8 @@
         точно такой же результат как и формула выше будет:
         </div>
         <div class="formula">Чистые активы = стр.1300 - ЗУ + ДБП</div>
+        <div class="shadow">Тень</div>
+        <div class="shadow">синяя Тень слева снизу</div>
     </main>
     <footer>
         &copy; Разуванов Ростислав, ФБИ-14, 2 курс, 2023
