@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разуванов Ростислав Сергеевич. Лабораторная 4</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        function showSum(){
+            let a = 5154;
+            let b = 7891;
+            let result = a + b;
+            alert('Сумма '+ a + ' и '+ b + ' равна ' +  result);
+        }
+        function showAthor(){
+            let Author = 'Рад вас приветствовать!\nАвтор страницы:\nРазуванов Ростислав Сергеевич'
+            alert(Author);
+        }
+   
+    
+    </script>
+    <style>
+        .message{
+            cursor: pointer;
+            height: 50px;
+            width: 150px;
+            background-color: aquamarine;
+            border-color: black;
+            border: 1px solid;
+            border-radius: 7px;
+            display: inline-block;
+            
+        }
+
+    </style>
+<head>
+
+<body>
+    <header onclick="showAthor()">
+    </header>
+
+    <main>
+        <div class="message" onclick="showSum()"> Сколько будет 5154+7891?</div>
+        <div class="message" onclick="showAthor()">Узнать,кто автор страницы</div>
+    </main>
+
+    <footer onclick="showAthor()">
+        &copy; Разуванов Ростислав, ФБИ-14, 2 курс, 2023
+    </footer>
+</body>
+</html>
