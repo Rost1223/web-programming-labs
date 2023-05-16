@@ -16,6 +16,36 @@
             let result = a + b;
             alert('Сумма '+ a + ' и '+ b + ' равна ' +  result);
         }
+        function showUmn(){
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a * b;
+            alert('Произведение '+ a + ' и '+ b + ' равна ' +  result);
+        }
+        function showDel(){
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a / b;
+            alert('Деление '+ a + ' на '+ b + ' равна ' +  result);
+        }
+        
+        function showRazn(){
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a - b;
+            alert('Разность '+ a + ' и '+ b + ' равна ' +  result);
+        }
+
+
         function showAthor(){
             let Author = 'Рад вас приветствовать!\nАвтор страницы:\nРазуванов Ростислав Сергеевич'
             alert(Author);
@@ -27,7 +57,7 @@
         .message{
             cursor: pointer;
             height: 40px;
-            width: 160px;
+            width: 200px;
             padding: 7px;
             background-color: aquamarine;
             border-color: black;
@@ -47,9 +77,13 @@
 
     <main>
         <lable>Первое числo:<input type="number" value="0" id="numberA"></lable><br>
-        <label>Второе числo:<input type="number" value="0" id="numberA"></label><br>
-        <div class="message" onclick="showSum()"> Найти сумму чисел</div>
+        <label>Второе числo:<input type="number" value="0" id="numberB"></label><br>
         <div class="message" onclick="showAthor()">Узнать,кто автор страницы</div>
+        <div class="message" onclick="showSum()"> Найти сумму чисел</div>
+        <div class="message" onclick="showDel()">Найти деление</div>
+        <div class="message" onclick="showUmn()">Найти произведение</div>
+        <div class="message" onclick="showRazn()">Найти разность чисел</div>
+
     </main>
 
     <footer onclick="showAthor()">
