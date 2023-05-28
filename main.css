@@ -22,11 +22,17 @@ footer{
     padding: 10px;
     font-size: 16pt;
     text-align: right;
+    margin: 0px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
 }
 
-a{
 
-}
+
+
 
 a:visited{
 color: lightcoral;
@@ -46,3 +52,5 @@ a:active{
     color: pink;
     background-color: green;
 }
+
+
