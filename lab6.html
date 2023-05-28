@@ -34,6 +34,25 @@
             padding: 10px 20px;
             text-align: center;
         }
+        .shelk{
+            width: 150px;
+            left: 0px;
+            cursor: pointer;
+            background-color: aquamarine;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 30px;
+            border: 2px solid blueviolet;
+            text-align: center;
+            height: 100px;
+            vertical-align: middle;
+            top: 5px;
+            line-height: 90px;
+            position: relative;
+            transition: 1000ms;
+            transform: rotate(0);
+
+
+        }
     </style>
     <script>
         let number;
@@ -116,6 +135,28 @@
             document.getElementById('color-name').innerHTML = 'желтый';
            }
         }
+        function plase(smena) {
+        if (smena.style.left == '0px'){
+            smena.style.left = '1000px';
+            if (smena.style.transform = 'rotate(0)'){
+                smena.style.transform = 'rotate(4turn)';
+            }
+          }
+           else {
+            smena.style.left = '0px';
+            if(smena.style.transform = 'rotate(4turn)'){
+               smena.style.transform = 'rotate(0)'  
+            }
+          }
+        }
+        function block(k) {
+            if(parseInt(k.style.width)<=1000){
+                k.style.width = parseInt(k.style.width) +50 + 'px';
+            }
+            else {
+                k.style.width = '100px'
+            }
+        }
         </script>
     <head>
 
@@ -173,6 +214,8 @@
             Цвет:<span id="color-name">желтый</span><br>
             Сделайте двойной щелчок, чтобы сменить.
         </div>
+        
+        <div class="shelk" onclick="plase(this)">Щелкни меня</div>
     </main>
 
     <footer>
