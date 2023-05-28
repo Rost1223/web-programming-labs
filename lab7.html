@@ -35,7 +35,20 @@
             }
             let average = sum / exchage.length;
             document.getElementById('detail').innerHTML = 'Среднее значение' + average;
-            
+        }
+
+        function atb(){
+            let colors = document.getElementById('trbl');
+            for(let i = 0; i<10; i++){
+                let box = document.createElement('div');
+                box.style.width = '50px';
+                box.style.height = '50px';
+                box.style.backgroundColor = 'red';
+                box.style.opacity = i/10;
+                colors.appendChild(box);
+
+
+            }
         }
     </script>
 <head>
@@ -51,6 +64,9 @@
         <button onclick="showExchage()"> Курс доллара</button>
         <table border="1" id="dollar-exchange"></table>
         <div id="detail"></div>
+
+        <button onclick="atb()">Создать полупрозрачные блоки</button>
+        <div id="trbl"></div>
     </main>
 
     <footer>
