@@ -100,6 +100,18 @@
                 tr.appendChild(tdR);
                 table.appendChild(tr);
             }
+            let sum = 0;
+            for(let i = 0; i < kurs.length; i++) {
+                sum = sum + kurs[i];
+            }
+            let middle = sum / kurs.length;
+            document.getElementById('middle').innerHTML = 'Среднее значение: ' + middle;
+
+            let min = Math.min(...kurs);
+            document.getElementById('min').innerHTML = 'Минимальное значение: '+ min;
+
+            let max = Math.max(...kurs);
+            document.getElementById('max').innerHTML = 'Максимальное значение: ' + max;
         }
        
     </script>
@@ -130,6 +142,9 @@
 
         <button onclick="KursAkc()"> Курс акций компании Русал:</button>
         <table border="3" id="rusal"></table>
+        <div id="middle"></div>
+        <div id="min"></div>
+        <div id="max" style="margin-bottom: 20px;"></div>
 
         
     </main>
