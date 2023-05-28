@@ -50,6 +50,17 @@
             position: relative;
             transition: 1000ms;
             transform: rotate(0);
+        }
+        .block{
+            width: 100px;
+            cursor: pointer;
+            height: 70px;
+            position: relative;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            border-radius: 30px;
+            left: 50px;
+            top: 60px;
 
 
         }
@@ -149,12 +160,13 @@
             }
           }
         }
-        function block(k) {
-            if(parseInt(k.style.width)<=1000){
-                k.style.width = parseInt(k.style.width) +50 + 'px';
+       
+        function block(x) {
+            if(parseInt(x.style.width)<=1000){
+                x.style.width = parseInt(x.style.width) +50 + 'px';
             }
             else {
-                k.style.width = '100px'
+                x.style.width = '100px'
             }
         }
         </script>
@@ -216,7 +228,12 @@
         </div>
         
         <div class="shelk" onclick="plase(this)">Щелкни меня</div>
+
+        <div class="block" onclick="block(this)""></div>
+    
+    
     </main>
+
 
     <footer>
         &copy; Разуванов Ростислав, ФБИ-14, 2 курс, 2023
