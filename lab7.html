@@ -76,6 +76,31 @@
             
             }
         }
+        function KursAkc(){
+            let data = ['15.05.2023', '16.05.2023', '17.05.2023', '18.05.2023', '19.05.2023', 
+                        '22.05.2023', '23.05.2023', '24.05.2023', '25.05.2023', '26.05.2023' ];
+            let kurs = [40.51, 41.25, 41.13, 41.04, 40.90, 
+                        40.21, 40.12, 40.155, 39.70, 39.05];
+            let table = document.getElementById('rusal');
+            for(let i = 0; i < data.length; i++){
+                let tr = document.createElement('tr')
+                let tdData = document.createElement('td')
+                tdData.innerHTML = data[i];
+                tr.appendChild(tdData);
+                let tdKurs = document.createElement('td')
+                tdKurs.innerHTML = kurs[i];
+                tr.appendChild(tdKurs);
+                let tdR = document.createElement('td')
+                if (i==0){
+                    tdR.innerHTML = '-' ;         
+                }
+                else{
+                    tdR.innerHTML = (kurs[i]-kurs[i-1]).toFixed(3);
+                }
+                tr.appendChild(tdR);
+                table.appendChild(tr);
+            }
+        }
        
     </script>
 <head>
@@ -102,6 +127,9 @@
        
         <button onclick="umn()">Умножение на 29</button>
         <div id="b"></div>
+
+        <button onclick="KursAkc()"> Курс акций компании Русал:</button>
+        <table border="3" id="rusal"></table>
 
         
     </main>
