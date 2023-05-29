@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(215, 244, 114);
+    background-color: rgb(213, 156, 0);
     color: black;
     font-family: 'segoe print', Courier, monospace;
     margin: 0px;
@@ -14,7 +14,7 @@ menu {
     font-weight: bolder;
     position: fixed;
     top: -20px;
-    background-color: white;
+    background-color: black;
     height: 70px;
     width: 100%;
     text-align: center;
@@ -23,7 +23,7 @@ menu {
 }
 a {
     text-decoration: none;
-    color: rgb(29, 39, 39);
+    color: rgb(213, 156, 0);
     margin-right: 30px;
 }
 a:hover {
